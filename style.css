@@ -1,0 +1,211 @@
+/* พื้นหลังสีดำสนิท */
+body {
+    background-color: #0d0d0d; /* ดำลึกเหมือนอวกาศ */
+    color: #f0f0f0; /* สีขาวหม่นเพื่อความนุ่มนวล */
+    font-family: Arial, sans-serif;
+}
+
+/* ปรับแต่ง Header */
+h1, h2, h3 ,h5 ,h6{
+    color: #e0e0e0; /* สีขาวอ่อน */
+    text-shadow: 0px 0px 8px #0096ff; /* เงาสีน้ำเงินเพื่อความเป็นประกาย */
+}
+
+/* ปุ่มและลิงค์ */
+a, a:visited {
+    color: #00c8ff; /* สีน้ำเงินอ่อนแบบประกาย */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd700; /* เปลี่ยนเป็นสีทองเมื่อ hover เพื่อให้ดูโดดเด่น */
+}
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(90deg, #0a0f1e, #1a3b5d, #0a0f1e); /* Dark space gradient */
+    box-shadow: 0 0 20px rgba(0, 71, 179, 0.8); /* Strong blue glow shadow */
+    border-bottom: 1px solid #007bff; /* Blue border at the bottom */
+    padding: 15px 20px;
+}
+
+.navbar-brand {
+    color: #78b2ff !important; /* Light blue color for brand text */
+    font-weight: bold;
+    text-shadow: 0 0 12px #007bff, 0 0 15px #00d4ff; /* Intense glow effect */
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.navbar-nav .nav-link {
+    color: #cce7ff !important; /* Light blue color for nav links */
+    font-weight: 600;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-link:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #78b2ff !important; /* Lighter blue on hover */
+    text-shadow: 0 0 10px #78b2ff, 0 0 20px #007bff; /* Glowing effect on hover */
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+.navbar-toggler {
+    border-color: #78b2ff; /* Light blue border for toggle button */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(120, 178, 255, 0.9)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Custom glowing blue lines for icon */
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* กรอบรูปโปรไฟล์ให้เป็นวงกลมเด่นขึ้น */
+img.rounded-circle {
+    width: 190px; /* ขนาดโปรไฟล์ใหญ่ขึ้น */
+    height: 390px;
+    border-radius: 50%; /* วงกลมสมบูรณ์ */
+    border: 5px solid #146075; /* ขอบสีชมพู */
+    box-shadow: 0px 0px 15px rgba(77, 107, 163, 0.5), 0px 0px 25px rgba(136, 173, 216, 0.4); /* เงาสองชั้น */
+    transition: transform 0.3s, box-shadow 0.3s; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+}
+
+img.rounded-circle:hover {
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+    box-shadow: 0px 0px 25px rgba(39, 107, 163, 0.6), 0px 0px 35px rgba(120, 168, 207, 0.5); /* เงาหนักขึ้นเมื่อ hover */
+}
+
+/* ส่วนของ Section */
+section {
+    background-color: #1a1a1a; /* พื้นหลังของ Section สีดำเข้ม */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 20px rgba(0, 200, 255, 0.2); /* เงาน้ำเงินอ่อน */
+}
+
+/* เส้นแบ่งระหว่าง Section */
+hr {
+    border: 1px solid #00c8ff; /* เส้นแบ่งสีน้ำเงิน */
+    width: 80%;
+    margin: 20px auto;
+    opacity: 0.6;
+}
+
+/* ปรับแต่ง Ordered List (สำหรับ Contact) */
+ol {
+    color: #f0f0f0;
+}
+
+ol li {
+    margin: 8px 0;
+}
+
+/* ปุ่มหรือลิงค์ใน Footer */
+footer a {
+    color: #ffd700;
+}
+
+footer a:hover {
+    color: #00c8ff;
+}
+
+/* ปุ่ม */
+button {
+    background-color: #00c8ff; /* ปุ่มสีน้ำเงิน */
+    color: #0d0d0d; /* สีตัวอักษรสีดำ */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffd700; /* สีทองเมื่อ hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar a {
+        color: #00c8ff; /* สีของ navbar ในมือถือ */
+    }
+    section {
+        padding: 15px;
+    }
+}
+#aboutme {
+    background-color: #0a0f1e; /* Dark space-themed background */
+    color: #cce7ff; /* Light blue text color for contrast */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 51, 102, 0.8); /* Blue glow shadow */
+    margin-top: 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Subtle star pattern */
+}
+
+#aboutme h3 {
+    font-weight: bold;
+    color: #78b2ff; /* Light blue for heading */
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #3a9bdc, 0 0 10px #00d4ff; /* Glowing effect */
+}
+
+#aboutme label {
+    font-weight: 600;
+    color: #a8d1ff; /* Light blue color for labels */
+}
+
+#aboutme input[type="text"],
+#aboutme input[type="email"],
+#aboutme textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #002b5c;
+    background-color: #001f3f; /* Deep navy background */
+    color: #cce7ff; /* Light blue text */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.5); /* Subtle blue glow */
+}
+
+#aboutme input[type="submit"] {
+    background-color: #0047b3; /* Bright blue button */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 71, 179, 0.8); /* Strong blue glow */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#aboutme input[type="submit"]:hover {
+    background-color: #007bff; /* Lighter blue on hover */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 1); /* Brighter glow */
+}
