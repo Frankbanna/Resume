@@ -102,8 +102,8 @@ a:hover {
 
 /* กรอบรูปโปรไฟล์ให้เป็นวงกลมเด่นขึ้น */
 img.rounded-circle {
-    width: 190px; /* ขนาดโปรไฟล์ใหญ่ขึ้น */
-    height: 390px;
+    width: 100px; /* ขนาดโปรไฟล์ใหญ่ขึ้น */
+    height: 350px;
     border-radius: 50%; /* วงกลมสมบูรณ์ */
     border: 5px solid #146075; /* ขอบสีชมพู */
     box-shadow: 0px 0px 15px rgba(77, 107, 163, 0.5), 0px 0px 25px rgba(136, 173, 216, 0.4); /* เงาสองชั้น */
