@@ -71,12 +71,30 @@ a:hover {
 }
 
 .navbar-toggler {
-    border-color: #78b2ff; /* Light blue border for toggle button */
+    background-color: #78b2ff; /* พื้นหลังสีน้ำเงินอ่อน */
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 8px; /* เส้นขอบมน */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเบา ๆ */
+    padding: 8px 10px; /* เพิ่มช่องว่างรอบปุ่ม */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* เพิ่มเอฟเฟกต์ */
+}
+
+.navbar-toggler:hover {
+    background-color: #5a9ef9; /* เปลี่ยนสีเมื่อ Hover */
+    transform: scale(1.1); /* ขยายเล็กน้อยเมื่อ Hover */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* ลบเส้นขอบเวลา Focus */
+    background-color: #468de7; /* เปลี่ยนสีเมื่อถูกคลิกหรือ Focus */
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(120, 178, 255, 0.9)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Custom glowing blue lines for icon */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* เปลี่ยนไอคอน toggle เป็นสีขาว */
 }
+
+
 
 .navbar-collapse {
     justify-content: flex-end;
