@@ -102,7 +102,7 @@ a:hover {
 
 
 img.rounded-circle {
-    width: 250px; /* หรือขนาดที่ต้องการ */
+    width: 495px; /* หรือขนาดที่ต้องการ */
     height: auto; /* ให้ปรับความสูงตามอัตราส่วน */
     border-radius: 50%; /* วงกลม */
     border: 5px solid #146075;
