@@ -108,6 +108,7 @@ img.rounded-circle {
     border-radius: 50%; /* ทำให้เป็นวงกลม */
     border: 5px solid #146075;
     object-fit: cover; /* ป้องกันภาพบีบ/ยืด */
+    background-color: #000; /* พื้นหลังสีดำ */
     box-shadow: 0px 0px 15px rgba(77, 107, 163, 0.5), 0px 0px 25px rgba(136, 173, 216, 0.4);
     transition: transform 0.3s, box-shadow 0.3s;
     display: block;
